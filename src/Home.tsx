@@ -28,7 +28,7 @@ const Countdown = () => {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center p-8 bg-white-300 shadow-lg">
+    <div className="flex flex-col items-center justify-center p-8 bg-white-300">
       <p className="text-2xl font-medium mb-4">26. Juli 2025</p>
       <p className="text-4xl ">{formatTime(timeLeft)}</p>
     </div>
@@ -65,6 +65,11 @@ const Home = () => {
       </div>
       <h1 className="text-5xl text-center">Vi gifter oss</h1>
       <Countdown />
+      <div className="flex m-auto text-center">
+        <button className="btn-danger">Bidra</button>
+        <button>Bidra?</button>
+        <button>Bidra?</button>
+      </div>
     </body>
   );
 };
