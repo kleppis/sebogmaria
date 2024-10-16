@@ -29,9 +29,8 @@ const Countdown = () => {
 
   return (
     <div className="flex flex-col items-center justify-center p-8 bg-white-300 shadow-lg">
-      <h1 className="text-3xl font-bold mb-4">Maria & Sebastian</h1>
       <p className="text-2xl font-medium mb-4">26. Juli 2025</p>
-      <p className="text-4xl font-bold underline">{formatTime(timeLeft)}</p>
+      <p className="text-4xl ">{formatTime(timeLeft)}</p>
     </div>
   );
 };
@@ -41,11 +40,27 @@ const Home = () => {
   return (
     <body className="home-screen">
       <div className="flex p-20 ">
-        <div className="w-1/2 pe-11">
+        <div className="w-1/2 me-12 relative group cursor-pointer">
           <img src={Bilde1} alt="" className=" shadow-lg shadow-gray-600 " />
+          <div className="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex justify-center items-center">
+            <a
+              href="/ny-side" // Sett lenken til ønsket side her
+              className="text-white text-3xl font-bold"
+            >
+              Sebastian
+            </a>
+          </div>
         </div>
-        <div className="w-1/2 ps-11">
+        <div className="w-1/2 me-12 relative group cursor-pointer">
           <img src={Bilde2} alt="" className=" shadow-lg shadow-gray-600 " />
+          <div className="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex justify-center items-center">
+            <a
+              href="/ny-side" // Sett lenken til ønsket side her
+              className="text-white text-3xl font-bold"
+            >
+              Maria
+            </a>
+          </div>
         </div>
       </div>
       <h1 className="text-5xl text-center">Vi gifter oss</h1>
