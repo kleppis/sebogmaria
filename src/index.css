@@ -1,3 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+  --color-primary: #F3E7D8;
+  --color-pink-light: #F8B3CC;
+  --color-pink-dark: #F85183;
+  --color-gold-light: #C7B65B;
+  --color-orange: #E6951D;
+}
+
+body {
+  font-family: "Playfair Display", serif;
+}

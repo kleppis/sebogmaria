@@ -1,4 +1,10 @@
 import React, { useEffect, useState } from "react";
+import "./Home.css";
+import "./index.css";
+import Bilde1 from "./assets/bilde2.jpg";
+import Bilde2 from "./assets/bilde3.jpg";
+
+
 
 // Nedtellingskomponent
 const Countdown = () => {
@@ -17,16 +23,15 @@ const Countdown = () => {
     const days = Math.floor(ms / (1000 * 60 * 60 * 24));
     const hours = Math.floor((ms % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
     const minutes = Math.floor((ms % (1000 * 60 * 60)) / (1000 * 60));
-    const seconds = Math.floor((ms % (1000 * 60)) / 1000);
 
-    return `${days}d ${hours}h ${minutes}m ${seconds}s`;
+    return `${days}d ${hours}h ${minutes}m`;
   };
 
   return (
-    <div className="flex flex-col items-center justify-center p-8 bg-white shadow-lg rounded-lg">
-      <h1 className="text-3xl font-bold mb-4">Bryllupet vårt!</h1>
+    <div className="flex flex-col items-center justify-center p-8 bg-white-300 shadow-lg">
+      <h1 className="text-3xl font-bold mb-4">Maria & Sebastian</h1>
       <p className="text-2xl font-medium mb-4">26. Juli 2025</p>
-      <p className="text-4xl font-bold">{formatTime(timeLeft)}</p>
+      <p className="text-4xl font-bold underline">{formatTime(timeLeft)}</p>
     </div>
   );
 };
@@ -34,20 +39,18 @@ const Countdown = () => {
 // Hovedkomponent med plass til bilder
 const Home = () => {
   return (
-    <div className="min-h-screen bg-gray-100">
-      <header className="bg-blue-500 text-white p-6 text-center">
-        <h1 className="text-5xl font-bold">Velkommen til vårt bryllup!</h1>
-      </header>
-      <main className="p-6">
-        <Countdown />
-        <div className="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-          {/* Eksempelbilder */}
-          <img src="bilde1.jpg" alt="Bryllupsbilde 1" className="rounded-lg shadow-lg" />
-          <img src="bilde2.jpg" alt="Bryllupsbilde 2" className="rounded-lg shadow-lg" />
-          <img src="bilde3.jpg" alt="Bryllupsbilde 3" className="rounded-lg shadow-lg" />
+    <body className="home-screen">
+      <div className="flex p-20 ">
+        <div className="w-1/2 pe-11">
+          <img src={Bilde1} alt="" className=" shadow-lg shadow-gray-600 " />
         </div>
-      </main>
-    </div>
+        <div className="w-1/2 ps-11">
+          <img src={Bilde2} alt="" className=" shadow-lg shadow-gray-600 " />
+        </div>
+      </div>
+      <h1 className="text-5xl text-center">Vi gifter oss</h1>
+      <Countdown />
+    </body>
   );
 };
 
