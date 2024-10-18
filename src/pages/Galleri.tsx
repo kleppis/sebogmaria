@@ -1,6 +1,9 @@
 import React from "react"
 import Navbar from "../components/navbar"
 import "./Galleri.css";
+import "../index.css";
+
+
 
 import Bilde1 from "../assets/bilde1.jpg";
 import Bilde2 from "../assets/bilde2.jpg";

@@ -1,4 +1,5 @@
 import React from 'react';
+import "./button.css";
 
 interface ButtonProps {
     text: string;
@@ -9,7 +10,7 @@ const Button: React.FC<ButtonProps> = ({ text, onClick }) => {
     return (
         <button
             onClick={onClick}
-            className="px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition-colors duration-300"
+            className="button-1 text-xl px-4 py-2 rounded-sm shadow-md shadow-gray-400 hover:shadow-black active:scale-95"
         >
             {text}
         </button>
