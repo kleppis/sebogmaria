@@ -1,0 +1,12 @@
+.footer {
+    background: linear-gradient(var(--color-primary), var(--color-pink-light) 30%);
+}
+
+.footer-link {
+    border-bottom: 2px solid var(--color-pink-light);
+
+}
+
+.footer-link:hover {
+    border-color: var(--color-primary);
+}
