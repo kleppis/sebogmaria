@@ -14,7 +14,13 @@ const Home = () => {
   return (
     <body className="home-screen px-20">
       <Navbar />
-      <div className="flex  py-10">
+      <div className="h-screen">
+        <h1 className="text-8xl text-center py-40">Vi gifter oss</h1>
+        <p className="text-center text-2xl font-bold">Maria & Sebastian</p>
+        <Countdown />
+
+      </div>
+      <div className="flex -mt-28  pb-10">
         <div className=" me-12 relative group cursor-pointer">
           <img src={Bilde1} alt="" className=" shadow-lg shadow-gray-600 " />
           <div className="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex justify-center items-center">
@@ -38,10 +44,7 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <h1 className="text-5xl text-center">Vi gifter oss</h1>
-      <div className="border-b-2 border-black">
-        <Countdown />
-      </div>
+
       <div className="flex py-10 space-x-10">
         <img src={Bilde4} alt="" className="shadow-lg shadow-gray-600 w-1/3 " />
         <div>
@@ -52,7 +55,7 @@ const Home = () => {
           </div>
         </div>
       </div>
-    </body>
+    </body >
   );
 };
 

@@ -17,7 +17,7 @@ const Innslag = () => {
             <h2 className="pt-20 pb-10 text-4xl text-center">Ta kontakt med våre toastmastere</h2>
             <div className="flex justify-center space-x-10">
                 <div className="w-1/4 text-center">
-                    <div className="relative group cursor-pointer">
+                    <div className="relative group ">
                         <img src={Bilde1} alt="" className="shadow-lg shadow-gray-400" />
                         <div className="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex justify-center items-center">
                             <p
@@ -31,7 +31,7 @@ const Innslag = () => {
                     <Button text="+47 93441227" />
                 </div>
                 <div className="w-1/4 text-center">
-                    <div className="relative group cursor-pointer">
+                    <div className="relative group ">
                         <img src={Bilde1} alt="" className="shadow-lg shadow-gray-400" />
                         <div className="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex justify-center items-center">
                             <p

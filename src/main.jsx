@@ -9,7 +9,7 @@ import Innslag from './pages/Innslag.tsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <Innslag />
+    <Home />
   </StrictMode>,
 )
 

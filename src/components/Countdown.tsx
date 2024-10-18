@@ -22,8 +22,8 @@ const Countdown = () => {
     };
 
     return (
-        <div className="flex flex-col items-center justify-center p-8 bg-white-300">
-            <p className="text-2xl font-medium mb-4">26. Juli 2025</p>
+        <div className="flex flex-col items-center justify-center py-8 bg-white-300">
+            <p className="text-2xl font-medium mb-8">26. Juli 2025</p>
             <p className="text-4xl ">{formatTime(timeLeft)}</p>
         </div>
     );
