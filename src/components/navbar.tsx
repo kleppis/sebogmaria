@@ -9,7 +9,7 @@ interface NavbarProps {
 
 const Navbar = () => {
     return (
-        <header className=' flex justify-center w-1/2 mx-auto justify-between text-xl pt-10 '>
+        <header className=' flex justify-center w-1/2 mx-auto justify-between text-xl py-10 '>
             <div className=' flex justify-between w-full'>
                 <a href="" className='hover:scale-110 active:scale-100 transition-all'>Galleri</a>
                 <a href="" className='hover:scale-110 active:scale-100 transition-all'>Vår historie</a>
