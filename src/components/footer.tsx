@@ -22,8 +22,11 @@ const Footer = () => {
                 </div>
 
             </div>
-            <div className="w-full text-center font-bold my-auto pb-4">
-                <a href="#">Tilbake til toppen</a>
+            <div className="w-full text-center font-bold my-auto">
+                <a href="#">Maria & Sebastian</a>
+                <div className="mt-10">
+                    <a href="#" className="animate-ping">Til toppen</a>
+                </div>
             </div>
             <div className="w-full justify-end text-end">
                 <div className="py-2">

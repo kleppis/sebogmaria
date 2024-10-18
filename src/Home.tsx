@@ -47,7 +47,7 @@ const Home = () => {
           </div>
         </div>
 
-        <div className="flex py-10 space-x-10">
+        <div className="flex py-40 space-x-10">
           <img src={Bilde4} alt="" className="shadow-lg shadow-gray-600 w-1/3 " />
           <div>
             <h2 className="text-4xl">Vi gleder oss til å feire med dere</h2>
