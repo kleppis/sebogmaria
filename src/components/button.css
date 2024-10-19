@@ -1,0 +1,8 @@
+.button-1 {
+    background-color: var(--color-primary);
+    transition: all .3s ease;
+}
+
+.button-1:hover {
+    background-color: rgb(182, 182, 182);
+}
