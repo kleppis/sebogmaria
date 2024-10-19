@@ -3,8 +3,8 @@ import "./footer.css"
 
 const Footer = () => {
     return (
-        <div className="footer pb-20 pt-40 px-40 flex justify-center">
-            <div className="w-full">
+        <div className="footer pb-20 pt-40 px-5 sm:px-20 md:px-40 flex flex-col sm:flex-row justify-center">
+            <div className="w-full text-center sm:text-left">
                 <div className="py-2">
                     <p className="">Ta kontakt</p>
                 </div>
@@ -22,11 +22,8 @@ const Footer = () => {
                 </div>
 
             </div>
-            <div className="w-full text-center font-bold my-auto">
+            <div className="w-full text-center font-bold my-auto text-white">
                 <a href="#">Maria & Sebastian</a>
-                <div className="mt-10">
-                    <a href="#" className="animate-ping">Til toppen</a>
-                </div>
             </div>
             <div className="w-full justify-end text-end">
                 <div className="py-2">
