@@ -1,9 +1,7 @@
-import React from "react"
-import Navbar from "../components/navbar"
+import React from "react";
+import Navbar from "../components/navbar";
 import "./Galleri.css";
 import "../index.css";
-
-
 
 import Bilde1 from "../assets/bilde1.jpg";
 import Bilde2 from "../assets/bilde2.jpg";
@@ -12,55 +10,44 @@ import Bilde4 from "../assets/bilde4.jpg";
 import Bilde5 from "../assets/bilde5.jpg";
 import Footer from "../components/footer";
 
-
-
 const Galleri = () => {
     return (
         <>
-            <body className="gallery-screen px-20">
+            <body className="gallery-screen px-4 sm:px-20">
                 <Navbar />
                 <div className="pb-40 pt-20">
-                    <div className="grid grid-flow-col w-full">
-                        <div className="">
-                            <img src={Bilde1} alt="" />
+                    <div className="grid gap-4 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+                        <div className="relative">
+                            <img src={Bilde1} alt="" className="w-full h-full object-cover rounded-lg shadow-lg" />
                         </div>
-                        <div className="">
-                            <img src={Bilde2} alt="" />
+                        <div className="relative">
+                            <img src={Bilde2} alt="" className="w-full h-full object-cover rounded-lg shadow-lg" />
                         </div>
-                        <div className="">
-                            <img src={Bilde3} alt="" />
+                        <div className="relative">
+                            <img src={Bilde3} alt="" className="w-full h-full object-cover rounded-lg shadow-lg" />
                         </div>
-                        <div className="">
-                            <img src={Bilde3} alt="" />
+                        <div className="relative">
+                            <img src={Bilde4} alt="" className="w-full h-full object-cover rounded-lg shadow-lg" />
                         </div>
-                    </div>
-                    <div className="flex w-full">
-                        <div className="">
-                            <img src={Bilde4} alt="" />
+                        <div className="relative">
+                            <img src={Bilde5} alt="" className="w-full h-full object-cover rounded-lg shadow-lg" />
                         </div>
-                        <div className="">
-                            <img src={Bilde5} alt="" />
+                        <div className="relative">
+                            <img src={Bilde1} alt="" className="w-full h-full object-cover rounded-lg shadow-lg" />
                         </div>
-                        <div className="">
-                            <img src={Bilde1} alt="" />
+                        <div className="relative">
+                            <img src={Bilde2} alt="" className="w-full h-full object-cover rounded-lg shadow-lg" />
                         </div>
-                    </div>
-                    <div className="flex w-full">
-                        <div className="">
-                            <img src={Bilde1} alt="" />
-                        </div>
-                        <div className="">
-                            <img src={Bilde5} alt="" />
-                        </div>
-                        <div className="">
-                            <img src={Bilde4} alt="" />
+                        <div className="relative">
+                            <img src={Bilde3} alt="" className="w-full h-full object-cover rounded-lg shadow-lg" />
                         </div>
                     </div>
                 </div>
             </body>
             <Footer />
+
         </>
-    )
-}
+    );
+};
 
 export default Galleri;

@@ -7,6 +7,8 @@ import Bilde4 from "./assets/bilde4.jpg";
 import Navbar from "./components/navbar";
 import Countdown from "./components/Countdown";
 import Footer from "./components/footer";
+import Flower from "./assets/flower.svg";
+import Flowerleft from "./assets/flower-left.svg";
 
 
 
@@ -17,11 +19,17 @@ const Home = () => {
       <body className="home-screen px-20">
         <Navbar />
         <div className="h-screen">
-          <h1 className="text-8xl text-center py-40">Vi gifter oss</h1>
+          <div className="flex justify-center">
+            <img src={Flowerleft} alt="" className="-scale-x-100" />
+            <h1 className="text-8xl text-center py-40">Vi gifter oss</h1>
+            <img src={Flower} alt="" />
+
+          </div>
           <p className="text-center text-2xl font-bold">Maria & Sebastian</p>
           <Countdown />
-
         </div>
+
+
         <div className="flex -mt-28  pb-10">
           <div className=" me-12 relative group cursor-pointer">
             <img src={Bilde1} alt="" className=" shadow-lg shadow-gray-600 " />
