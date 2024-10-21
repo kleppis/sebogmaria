@@ -14,8 +14,9 @@ const Galleri = () => {
     return (
         <>
             <Navbar />
-            <body className="gallery-screen px-4 sm:px-20">
-                <div className="pb-40 pt-20">
+            <body className="gallery-screen py-32 px-4 sm:px-20">
+                <h1 className="text-pinkDark text-center text-8xl pb-10">Galleri</h1>
+                <div className="">
                     <div className="grid gap-4 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
                         <div className="relative">
                             <img src={Bilde1} alt="" className="w-full h-full object-cover rounded-lg shadow-lg" />
