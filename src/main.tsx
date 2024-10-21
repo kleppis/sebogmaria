@@ -2,10 +2,10 @@ import * as React from "react";
 import * as ReactDOM from "react-dom/client"; // Bruk react-dom/client i stedet for react-dom
 import Home from './Home';
 import './index.css';
-import Galleri from './pages/Galleri.tsx';
-import Innslag from './pages/Innslag.tsx';
-import KommerDu from './pages/KommerDu.tsx';
-import Wishlist from './pages/Wishlist.tsx';
+import Galleri from './pages/Galleri';
+import Innslag from './pages/Innslag';
+import KommerDu from './pages/KommerDu';
+import Wishlist from './pages/Wishlist';
 
 import {
   createBrowserRouter,
@@ -19,15 +19,15 @@ const router = createBrowserRouter([
     element: <Home />
   },
   {
-    path: "innslag",
+    path: "innslag", // Endret til små bokstaver for å unngå routingproblemer
     element: <Innslag />
   },
   {
-    path: "galleri",
+    path: "galleri", // Endret til små bokstaver for konsistens
     element: <Galleri />
   },
   {
-    path: "kommerDu",
+    path: "kommerdu", // Endret til små bokstaver for konsistens
     element: <KommerDu />
   },
   {
@@ -37,7 +37,13 @@ const router = createBrowserRouter([
 ]);
 
 // Få tak i rot-elementet og bruk createRoot fra react-dom/client
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const rootElement = document.getElementById('root');
+
+if (!rootElement) {
+  throw new Error("Fant ikke root-elementet i HTML-dokumentet.");
+}
+
+const root = ReactDOM.createRoot(rootElement);
 root.render(
   <React.StrictMode>
     <RouterProvider router={router} />
