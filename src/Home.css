@@ -1,3 +1,31 @@
 .home-screen {
     background-color: var(--color-primary);
+    background-image: url(/public/bakgrunn-hjem.JPG);
+    background-position: top;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+}
+
+h1 {
+    color: var(--color-primary);
+}
+
+.dark-pink-animation {
+    transition: all .3s ease;
+}
+
+.dark-pink-animation:hover {
+    color: var(--color-pink-dark)
+}
+
+.home-date {
+    color: var(--color-primary);
+    font-family: "Fraunces", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-variation-settings:
+        "SOFT" 0,
+        "WONK" 0;
 }
