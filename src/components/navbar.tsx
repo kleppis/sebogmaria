@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import '../index.css';
 
+
 const Navbar: React.FC = () => {
     const [isOpen, setIsOpen] = useState(false);
     const [hasScrolled, setHasScrolled] = useState(false);
@@ -26,16 +27,16 @@ const Navbar: React.FC = () => {
 
     return (
         <header
-            className={`fixed top-0 left-0 w-full z-50 transition-colors duration-300 bg-orange bg-opacity-80 rounded-b-xl font}`}
+            className={`fixed top-0 left-0 w-full z-50 transition-colors  duration-300 bg-orange bg-opacity-80 rounded-b-xl font}`}
         >
             {/* Desktop-menynavigasjon */}
-            <div className='hidden sm:flex justify-center sm:w-full md:w-3/4 mx-auto justify-between text-pinkLight font-bold text-xl py-4 '>
+            <div className='hidden sm:flex justify-center drop-shadow-md sm:w-full md:w-3/4 mx-auto justify-between text-pinkLight font-bold text-xl py-4 '>
                 <div className='flex justify-between w-full'>
                     {navLinks.slice(0, 2).map((link) => (
                         <a
                             key={link.href}
                             href={link.href}
-                            className={`hover:text-pinkLight ${isActive(link.href) ? 'text-pinkLight' : ''}`}
+                            className={`links-home ${isActive(link.href) ? 'link-active' : ''}`}
                         >
                             {link.label}
                         </a>
@@ -43,7 +44,7 @@ const Navbar: React.FC = () => {
                 </div>
                 <a
                     href="/"
-                    className={`w-full text-center hover:text-pinkLight text-xl ${isActive('/') ? 'text-pinkLight' : ''}`}
+                    className={`w-full text-center links-home text-xl ${isActive('/') ? 'hover:text-primary' : ''}`}
                 >
                     Hjem
                 </a>
@@ -52,7 +53,7 @@ const Navbar: React.FC = () => {
                         <a
                             key={link.href}
                             href={link.href}
-                            className={`hover:text-pinkLight ${isActive(link.href) ? 'text-pinkLight' : ''}`}
+                            className={`links-home ${isActive(link.href) ? 'link-active' : ''}`}
                         >
                             {link.label}
                         </a>

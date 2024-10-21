@@ -10,25 +10,30 @@ import Flower from "./assets/flower.svg";
 import Flowerleft from "./assets/flower-left.svg";
 import WaterBackground from "./components/Waterbackground";
 import Navbar_home from "./components/navbar-home";
+import MouseHover from "./components/mouseHover";
 
 
 // Hovedkomponent med plass til bilder
-const Home = () => {
+const Home: React.FC = () => {
+
+
   return (
     <>
 
-      <body className="home-screen ">
+      <div className="home-screen">
+        <div className="home-background">
+          <div className="">
 
-        <div className="pb-16 px-20">
+            <div className="flex justify-center">
+              <MouseHover />
 
-          <div className="flex justify-center">
-            <h1 className="text-8xl text-center pt-80 mt-40 font-primary ">Vi gifter oss</h1>
+            </div>
 
           </div>
-          <p className="text-5xl font-medium text-center home-date pt-5">26.07.2025</p>
-
         </div>
+
         <div>
+
           <Navbar_home />
 
 
@@ -68,7 +73,7 @@ const Home = () => {
             </div>
           </div>
         </div>
-      </body >
+      </div >
       <Footer />
     </>
   );

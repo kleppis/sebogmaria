@@ -1,0 +1,21 @@
+.links {
+    filter: drop-shadow(0 4px 3px rgb(230 149 28 / 0.2)) drop-shadow(0 2px 2px rgb(230 149 28 / 0.06));
+}
+
+
+.links-home {
+    transition: all .4s ease-in-out;
+}
+
+.links-home:hover {
+    filter: drop-shadow(0 3px 2px rgb(179, 93, 210));
+}
+
+.links-home:active {
+    filter: drop-shadow(0 3px 2px rgb(179, 93, 210));
+}
+
+.link-active {
+    filter: drop-shadow(0 3px 2px rgb(179, 93, 210));
+
+}

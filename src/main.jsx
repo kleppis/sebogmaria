@@ -1,34 +1,45 @@
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
-import Home from './Home.tsx'
-import './index.css'
-import Galleri from './pages/Galleri.tsx'
-import Innslag from './pages/Innslag.tsx'
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import KommerDu from './pages/KommerDu.tsx'
+import * as React from "react";
+import * as ReactDOM from "react-dom/client"; // Bruk react-dom/client i stedet for react-dom
+import Home from './Home';
+import './index.css';
+import Galleri from './pages/Galleri.tsx';
+import Innslag from './pages/Innslag.tsx';
+import KommerDu from './pages/KommerDu.tsx';
+import Wishlist from './pages/Wishlist.tsx';
 
-/*
-createRoot(document.getElementById('root')).render(
-  <StrictMode>
-    <Galleri />
-  </StrictMode>,
-)
+import {
+  createBrowserRouter,
+  RouterProvider,
+} from "react-router-dom";
 
-//<Home />
-//<Galleri />
-*/
+// Opprett routeren
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <Home />
+  },
+  {
+    path: "Innslag",
+    element: <Innslag />
+  },
+  {
+    path: "Galleri",
+    element: <Galleri />
+  },
+  {
+    path: "KommerDu",
+    element: <KommerDu />
+  },
+  {
+    path: "wishlist",
+    element: <Wishlist />
+  }
+]);
 
-
-createRoot(document.getElementById('root')).render(
-  <StrictMode>
-    <Router>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/gallery" element={<Galleri />} />
-        <Route path="/Innslag" element={<Innslag />} />
-        <Route path="/KommerDu" element={<KommerDu />} />
-      </Routes>
-    </Router>
-  </StrictMode>,
-)
-
+// Få tak i rot-elementet og bruk createRoot fra react-dom/client
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
+  <React.StrictMode>
+    <RouterProvider router={router} />
+  </React.StrictMode>
+);
