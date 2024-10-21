@@ -5,6 +5,7 @@ import './index.css'
 import Galleri from './pages/Galleri.tsx'
 import Innslag from './pages/Innslag.tsx'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import KommerDu from './pages/KommerDu.tsx'
 
 /*
 createRoot(document.getElementById('root')).render(
@@ -25,6 +26,7 @@ createRoot(document.getElementById('root')).render(
         <Route path="/" element={<Home />} />
         <Route path="/gallery" element={<Galleri />} />
         <Route path="/Innslag" element={<Innslag />} />
+        <Route path="/KommerDu" element={<KommerDu />} />
       </Routes>
     </Router>
   </StrictMode>,

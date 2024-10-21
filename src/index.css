@@ -8,8 +8,22 @@
   --color-pink-dark: #F85183;
   --color-gold-light: #C7B65B;
   --color-orange: #E6951D;
+  --fraunces-soft: 0;
+  --fraunces-wonk: 1;
 }
 
 body {
-  font-family: "Playfair Display", serif;
+  font-family: "Fraunces", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  /* Angi ønsket standard fontvekt */
+  font-style: normal;
+  font-variation-settings:
+    "SOFT" 0,
+    "WONK" 0;
+}
+
+h1 {
+  font-weight: 500;
+  text-transform: uppercase;
 }

@@ -18,13 +18,12 @@ const Countdown = () => {
         const hours = Math.floor((ms % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
         const minutes = Math.floor((ms % (1000 * 60 * 60)) / (1000 * 60));
 
-        return `${days}d ${hours}h ${minutes}m`;
+        return `${days}d ${hours}t ${minutes}m`;
     };
 
     return (
-        <div className="flex flex-col items-center justify-center py-8 bg-white-300">
-            <p className="text-2xl font-medium mb-8">26. Juli 2025</p>
-            <p className="text-4xl ">{formatTime(timeLeft)}</p>
+        <div className="flex flex-col items-center justify-center bg-white-300 ">
+            <p className="text-4xl text-primary">{formatTime(timeLeft)}</p>
         </div>
     );
 };
