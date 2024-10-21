@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import '../index.css';
+import './navbar.css';
+
 
 const Navbar_home: React.FC = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -17,9 +19,9 @@ const Navbar_home: React.FC = () => {
 
     // Navigasjonslenker (uten "Hjem")
     const navLinks = [
-        { href: "/Gallery", label: "Galleri" },
+        { href: "/Galleri", label: "Galleri" },
         { href: "/history", label: "Vår historie" },
-        { href: "/wishlist", label: "Ønskeliste" },
+        { href: "/Wishlist", label: "Ønskeliste" },
         { href: "/Innslag", label: "Innslag" },
     ];
 
@@ -39,7 +41,7 @@ const Navbar_home: React.FC = () => {
 
     return (
         <header
-            className={`sticky top-0 left-0 w-full z-50 transition-colors duration-300 ${hasScrolled ? 'bg-orange bg-opacity-80 rounded-b-xl font' : 'bg-transparent'
+            className={`sticky top-0 left-0 w-full z-50 links transition-colors duration-300 ${hasScrolled ? 'bg-orange bg-opacity-80 rounded-b-xl font' : 'bg-transparent'
                 }`}
         >
             {/* Desktop-menynavigasjon */}
@@ -49,7 +51,7 @@ const Navbar_home: React.FC = () => {
                         <a
                             key={link.href}
                             href={link.href}
-                            className={`hover:text-pinkLight ${isActive(link.href) ? 'text-pinkLight' : ''}`}
+                            className={`links-home ${isActive(link.href) ? 'text-pinkLight' : ''}`}
                         >
                             {link.label}
                         </a>
@@ -57,16 +59,16 @@ const Navbar_home: React.FC = () => {
                 </div>
                 <a
                     href="/"
-                    className={`w-full text-center hover:text-pinkLight text-xl ${isActive('/') ? 'text-pinkLight' : ''}`}
+                    className={`w-full text-center link-active links-home hover:drop-shadow-lg text-2xl ${isActive('/') ? 'text-pinkLight' : ''}`}
                 >
                     Hjem
                 </a>
-                <div className='flex justify-between w-full'>
+                <div className='flex justify-between w-full '>
                     {navLinks.slice(2).map((link) => (
                         <a
                             key={link.href}
                             href={link.href}
-                            className={`hover:text-pinkLight ${isActive(link.href) ? 'text-pinkLight' : ''}`}
+                            className={`links-home ${isActive(link.href) ? 'text-pinkLight' : ''}`}
                         >
                             {link.label}
                         </a>
