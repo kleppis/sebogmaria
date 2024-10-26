@@ -77,7 +77,7 @@ const MouseHover: React.FC = () => {
         setWeights([]);
     };
 
-    const lines = ["VI GIFTER OSS", "-26.05.2025-"];
+    const lines = ["VI GIFTER OSS", "-26.07.2025-"];
 
     return (
         <div
