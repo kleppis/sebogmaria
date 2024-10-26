@@ -1,12 +1,53 @@
 import React, { useState } from "react";
-
+import "./mouseHover.css";
 
 
 const MouseHover: React.FC = () => {
 
     const [weights, setWeights] = useState<number[]>([]);
 
+
+    // Funksjon for å sjekke om nettleseren er Safari
+    const isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
+
     const handleMouseMove = (event: React.MouseEvent<HTMLDivElement, MouseEvent>) => {
+        if (isSafari) {
+            // Forenklet logikk for Safari for bedre ytelse
+            handleSafariMouseMove(event);
+        } else {
+            // Standard logikk for andre nettlesere
+            handleStandardMouseMove(event);
+        }
+    };
+
+    const handleSafariMouseMove = (event: React.MouseEvent<HTMLDivElement, MouseEvent>) => {
+        // En enklere versjon av logikken for Safari
+        const target = event.currentTarget;
+        const rect = target.getBoundingClientRect();
+        const mouseX = event.clientX - rect.left;
+
+        const newWeights = Array.from(target.querySelectorAll(".char")).map((child: any) => {
+            const charRect = child.getBoundingClientRect();
+            const charX = (charRect.left + charRect.right) / 2;
+            const distance = Math.abs((mouseX - charX) * 1.5);
+            // Gjør vekten mer statisk for å redusere ytelseproblemer
+            const weight = Math.max(500, 900 - distance);
+            return weight;
+        });
+
+        setWeights(newWeights);
+    };
+
+    let animationFrameId: number;
+
+    const handleStandardMouseMove = (event: React.MouseEvent<HTMLDivElement, MouseEvent>) => {
+        if (animationFrameId) {
+            cancelAnimationFrame(animationFrameId);
+        }
+
+        animationFrameId = requestAnimationFrame(() => {
+            // Fortsett med beregninger her
+        });
         const target = event.currentTarget;
         const rect = target.getBoundingClientRect();
         const mouseX = event.clientX - rect.left;
@@ -29,6 +70,9 @@ const MouseHover: React.FC = () => {
     };
 
     const handleMouseLeave = () => {
+        if (animationFrameId) {
+            cancelAnimationFrame(animationFrameId);
+        }
         // Tilbakestill font-weight når musen forlater
         setWeights([]);
     };

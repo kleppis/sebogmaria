@@ -1,0 +1,4 @@
+.char {
+    transition: font-weight 0.2s ease, transform 0.2s ease;
+    will-change: font-weight;
+}
