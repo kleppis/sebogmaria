@@ -54,8 +54,8 @@ const Footer = () => {
 
 const Footer = () => {
     return (
-        <footer className="bg-goldLight py-10 flex flex-col text-center justify-center px-20 text-primary">
-            <div className="w-full sm:text-start text-xl mt-10">
+        <footer className="bg-goldLight py-10 flex flex-col sm:flex-row text-center justify-center sm:px-10 md:px-20 text-primary">
+            <div className="w-full sm:text-start text-xl mt-10 mb-16 sm:mb-0">
                 <p>Spørsmål?</p>
                 <a href="mailto:kontakt@maria-sebastian.no" className=" hover:text-pinkLight transition-all">Send oss en mail</a>
             </div>

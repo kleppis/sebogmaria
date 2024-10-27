@@ -4,11 +4,7 @@ import "./index.css";
 import Bilde1 from "./assets/bilde2.jpg";
 import Bilde2 from "./assets/bilde3.jpg";
 import Bilde4 from "./assets/bilde4.jpg";
-import Countdown from "./components/Countdown";
 import Footer from "./components/footer";
-import Flower from "./assets/flower.svg";
-import Flowerleft from "./assets/flower-left.svg";
-import WaterBackground from "./components/Waterbackground";
 import Navbar_home from "./components/navbar-home";
 import MouseHover from "./components/mouseHover";
 
@@ -37,8 +33,8 @@ const Home: React.FC = () => {
           <Navbar_home />
 
 
-          <div className="flex px-20  py-14">
-            <div className=" me-12 relative group cursor-pointer">
+          <div className=" sm:flex px-10 sm:px-20  py-14">
+            <div className=" sm:me-12 mb-14 sm:mb-0 relative group cursor-pointer">
               <img src={Bilde1} alt="" className=" shadow-lg shadow-gray-600 " />
               <div className="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex justify-center items-center">
                 <a
@@ -49,7 +45,7 @@ const Home: React.FC = () => {
                 </a>
               </div>
             </div>
-            <div className=" ms-12 relative group cursor-pointer">
+            <div className=" sm:ms-12 relative group cursor-pointer">
               <img src={Bilde2} alt="" className=" shadow-lg shadow-gray-600 " />
               <div className="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex justify-center items-center">
                 <a
@@ -62,8 +58,10 @@ const Home: React.FC = () => {
             </div>
           </div>
 
-          <div className="flex px-20 py-40 space-x-10">
-            <img src={Bilde4} alt="" className="shadow-lg shadow-gray-600 w-1/3 " />
+
+
+          <div className=" sm:flex px-20 py-40 space-x-10">
+            <img src={Bilde4} alt="" className="hidden sm:block shadow-lg mx-auto shadow-gray-600 sm:w-1/3 " />
             <div>
               <h2 className="text-4xl">Vi gleder oss til å feire med dere</h2>
               <div className="flex py-10">

@@ -28,7 +28,7 @@ const Navbar_home: React.FC = () => {
     // Legg til en scroll event listener for å sjekke om brukeren har scrollet
     useEffect(() => {
         const handleScroll = () => {
-            if (window.scrollY > 700) {
+            if (window.scrollY > 600) {
                 setHasScrolled(true);
             } else {
                 setHasScrolled(false);
@@ -41,11 +41,11 @@ const Navbar_home: React.FC = () => {
 
     return (
         <header
-            className={`sticky top-0 left-0 w-full z-50 links transition-colors duration-300 ${hasScrolled ? 'bg-orange bg-opacity-80 rounded-b-xl font' : 'bg-transparent'
+            className={`sticky top-0 left-0 w-full z-50 links pb-3 px-3 sm:px-0 sm:pb-0 transition-colors duration-300 ${hasScrolled ? 'bg-orange bg-opacity-80 sm:rounded-b-xl font' : 'bg-transparent'
                 }`}
         >
             {/* Desktop-menynavigasjon */}
-            <div className='hidden sm:flex justify-center sm:w-full md:w-3/4 mx-auto justify-between text-pinkLight font-bold text-xl py-4 '>
+            <div className='hidden sm:flex sm:w-full md:w-3/4 mx-auto justify-between text-pinkLight font-bold text-xl py-4 '>
                 <div className='flex justify-between w-full'>
                     {navLinks.slice(0, 2).map((link) => (
                         <a
@@ -89,14 +89,14 @@ const Navbar_home: React.FC = () => {
                 </div>
                 {/* Overlay for hamburgermeny */}
                 <div
-                    className={`fixed inset-0 bg-black bg-opacity-80 transition-opacity duration-300 ${isOpen ? 'opacity-100 visible' : 'opacity-0 invisible'
+                    className={`fixed -inset-96 bg-black bg-opacity-80 transition-opacity duration-300 ${isOpen ? 'opacity-100 visible' : 'opacity-0 invisible'
                         } flex justify-center items-center`}
                     onClick={toggleMenu}
                 >
                     <div className="text-white text-3xl font-bold">
                         <ul className="space-y-4">
                             <li>
-                                <a href="/" className={isActive('/') ? 'underline' : ''}>
+                                <a href="/" className={isActive('/') ? 'text-pinkDark' : ''}>
                                     Hjem
                                 </a>
                             </li>
@@ -104,7 +104,7 @@ const Navbar_home: React.FC = () => {
                                 <li key={link.href}>
                                     <a
                                         href={link.href}
-                                        className={isActive(link.href) ? 'underline' : ''}
+                                        className={isActive(link.href) ? 'text-pinkDark' : ''}
                                     >
                                         {link.label}
                                     </a>
