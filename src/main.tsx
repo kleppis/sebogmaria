@@ -6,6 +6,7 @@ import Galleri from './pages/Galleri';
 import Innslag from './pages/Innslag';
 import KommerDu from './pages/KommerDu';
 import Wishlist from './pages/Wishlist';
+import History from "./pages/History";
 
 import {
   createBrowserRouter,
@@ -33,6 +34,10 @@ const router = createBrowserRouter([
   {
     path: "wishlist",
     element: <Wishlist />
+  },
+  {
+    path: "history",
+    element: <History />
   }
 ]);
 
