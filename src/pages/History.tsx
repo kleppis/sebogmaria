@@ -11,7 +11,6 @@ import TimelineOppositeContent, {
     timelineOppositeContentClasses,
 } from '@mui/lab/TimelineOppositeContent';
 
-import Bilde from "../assets/Bilde1.jpg";
 
 const History = () => {
     return (
@@ -21,7 +20,7 @@ const History = () => {
                 <Navbar />
                 <h1 className="text-center text-5xl pt-28 text-pinkDark">Vår historie</h1>
                 <div className="flex">
-                    <img src={Bilde} alt="" className="hidden md:block h-64 shadow-lg shadow-grey-500 sticky top-20" />
+                    <img src="" alt="" className="hidden md:block h-64 shadow-lg shadow-grey-500 sticky top-20" />
 
                     <Timeline
                         sx={{
