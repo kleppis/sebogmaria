@@ -41,11 +41,11 @@ const Navbar_home: React.FC = () => {
 
     return (
         <header
-            className={`sticky top-0 left-0 w-full z-50 links pb-3 px-3 sm:px-0 sm:pb-0 transition-colors duration-300 ${hasScrolled ? 'bg-orange bg-opacity-80 sm:rounded-b-xl font' : 'bg-transparent'
+            className={`sticky top-0 left-0 w-full z-50 links pb-3 px-3 md:px-0 md:pb-0 transition-colors duration-300 ${hasScrolled ? 'bg-orange-700 bg-opacity-80 sm:rounded-b-xl font' : 'bg-transparent'
                 }`}
         >
             {/* Desktop-menynavigasjon */}
-            <div className='hidden sm:flex sm:w-full md:w-3/4 mx-auto justify-between text-pinkLight font-bold text-xl py-4 '>
+            <div className='hidden md:flex sm:w-full md:w-3/4 mx-auto justify-between text-pinkLight font-bold text-xl py-4 '>
                 <div className='flex justify-between w-full'>
                     {navLinks.slice(0, 2).map((link) => (
                         <a
@@ -77,7 +77,7 @@ const Navbar_home: React.FC = () => {
             </div>
 
             {/* Mobile-menynavigasjon (hamburgermeny) */}
-            <div className="sm:hidden flex justify-between pt-4">
+            <div className="md:hidden flex justify-between pt-4">
                 {/* Burger-ikon */}
                 <div className="cursor-pointer" onClick={toggleMenu}>
                     <div className="w-6 h-1 bg-black mb-1"></div>
@@ -89,7 +89,7 @@ const Navbar_home: React.FC = () => {
                 </div>
                 {/* Overlay for hamburgermeny */}
                 <div
-                    className={`fixed -inset-96 bg-black bg-opacity-80 transition-opacity duration-300 ${isOpen ? 'opacity-100 visible' : 'opacity-0 invisible'
+                    className={`fixed bg-black bg-opacity-80 transition-opacity duration-300 ${isOpen ? 'opacity-100 visible' : 'opacity-0 invisible'
                         } flex justify-center items-center`}
                     onClick={toggleMenu}
                 >

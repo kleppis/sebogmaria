@@ -83,7 +83,7 @@ const MouseHover: React.FC = () => {
         <div
             onMouseMove={handleMouseMove}
             onMouseLeave={handleMouseLeave}
-            className="text-center w-screen justify-center text-primary text-4xl sm:text-7xl pt-60 lg:pt-80  pb-40"
+            className="text-center w-screen justify-center text-primary text-4xl sm:text-7xl pt-60 lg:pt-80  pb-40 cursor-default"
         >
             {lines.map((line, lineIndex) => (
                 <div key={lineIndex} className="flex justify-center space-x-1">

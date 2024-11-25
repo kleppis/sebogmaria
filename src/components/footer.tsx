@@ -55,7 +55,7 @@ const Footer = () => {
 const Footer = () => {
     return (
         <footer className="bg-goldLight py-10 flex flex-col sm:flex-row text-center justify-center sm:px-10 md:px-20 text-primary">
-            <div className="w-full sm:text-start text-xl mt-10 mb-16 sm:mb-0">
+            <div className="w-full sm:text-start text-xl md:mt-10 mb-5 md:mb-16 sm:mb-0">
                 <p>Spørsmål?</p>
                 <a href="mailto:kontakt@maria-sebastian.no" className=" hover:text-pinkLight transition-all">Send oss en mail</a>
             </div>
@@ -63,8 +63,8 @@ const Footer = () => {
                 <Countdown />
                 <p className=" text-5xl">TIL PARTY</p>
             </div>
-            <div className="w-full text-xl mt-16 sm:text-end">
-                <a href="/KommerDu" className=" hover:text-pinkLight transition-all">Kommer du?</a>
+            <div className="w-full text-xl mt-5 md:mt-16 sm:text-end">
+                <a href="/KommerDu" className=" hover:text-pinkLight transition-all">Kommer du ikke?</a>
             </div>
 
         </footer>
