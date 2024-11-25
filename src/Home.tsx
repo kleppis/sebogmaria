@@ -19,21 +19,15 @@ const Home: React.FC = () => {
 
   return (
     <>
-
       <div className="home-screen">
         <div className="home-background">
           <div className="">
-
             <div className="flex justify-center">
               <MouseHover />
-
             </div>
-
           </div>
         </div>
-
         <div>
-
           <Navbar_home />
           <h1 className="hidden md:block text-9xl text-center text-pinkLight header-h1">Velkommen</h1>
           <div className=" md:hidden bg-goldLight mx-10 sm:mx-20 p-5 rounded-md mt-5 shadow-lg shadow-gray-400">
