@@ -28,7 +28,7 @@ const Galleri = () => {
                         <div className=" bg-pinkLight hover:bg-pinkDark px-4 py-2 text-white mx-auto mt-10 md:mt-0 rounded-lg shadow-md shadow-pinkLight2-500 hover:shadow-black active:scale-95 max-w-md transition-all">
                             <button
                                 onClick={toggleExpand}
-                                className="w-full text-6xl text-pinkLight-500 hover:text-pinkLight-700"
+                                className="w-full text-6xl text-pinkLight-500 hover:text-pinkLight-700 pt-2"
                             >
                                 Pengegave
                             </button>
