@@ -12,7 +12,7 @@ const Button: React.FC<ButtonProps> = ({ text, url }) => {
 
         <a href={url}>
             <button
-                className="bg-pinkLight hover:bg-pinkDark transition-all text-5xl md:text-7xl text-white px-4 py-2 mt-10 md:mt-0 rounded-lg shadow-md shadow-pinkLight2-500 hover:shadow-black active:scale-95"
+                className="bg-pinkLight hover:bg-pinkDark transition-all text-5xl xl:text-7xl text-white px-4 py-2 mt-10 lg:mt-0 rounded-lg shadow-md shadow-pinkLight2-500 hover:shadow-black active:scale-95"
             >
                 {text}
             </button>
