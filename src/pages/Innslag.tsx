@@ -19,10 +19,10 @@ const Innslag = () => {
                     <div className="md:w-1/2 mt-10 md:mt-0">
                         <h1 className="text-black text-3xl mb-4">Jørgen Saaghus</h1>
                         <a href="tel:+4797194726" className="text-xl text-pinkDark hover:text-pinkLight transition-all">+47 93441227</a>
-                        <p className="mt-5 text-lg">Lorem ipsum, dolor sit amet sa. Incidunt est a provident fugiat perferendis ipsam iste
-                            officiis porro expedita voluptatem nesciunt hic vel quas ipsa ducimus harum magnam laboriosam, magni quis deserunt
-                            quia quisquam cupiditate? Vero, adipisci. Non tempora optio eum sed distinctio qui. Amet magni nobis esse porro veritatis
-                            in ab ex, provident dolores neque sequi?
+                        <p className="mt-5 text-lg">Jørgen bor i kollektiv med Sebastian og er den vi ler mest med og av. Han er opptatt av politikk,
+                            nyheter og han elsker oppmerksomhet. Jørgen drikker gjerne en burn kl 24.00 rett før han skal legge seg for å ta opp
+                            stemingen et hakk. Han er en fyr som er lett å bli glad i. Jørgen kommer til å være en av to toastmaster i bryllupet vårt,
+                            så  ikke nøl med å ta kontakt med han.
                         </p>
                     </div>
                 </div>

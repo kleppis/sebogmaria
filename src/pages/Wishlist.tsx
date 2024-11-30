@@ -35,9 +35,10 @@ const Galleri = () => {
                             {isExpanded && (
                                 <div className="mt-4 text-gray-700">
                                     <p>
-                                        Dette er tilleggsinformasjonen som vises når du klikker på knappen. Her kan du skrive mer
-                                        detaljer, vise bilder eller annen relevant informasjon.
+                                        Ønsker du å gi en pengegave? <br />
+                                        Da setter vi stor pris på om du vil gi til dette kontonummeret:
                                     </p>
+                                    <p className="font-bold">6032.16.77757</p>
                                 </div>
                             )}
                         </div>
