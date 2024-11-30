@@ -1,0 +1,13 @@
+.snap-item {
+    scroll-snap-align: center;
+  }
+
+  .snap-y {
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+  }
+
+
+.no-snap {
+    scroll-snap-align: none;
+}
