@@ -89,7 +89,7 @@ const Navbar_home: React.FC = () => {
                 </div>
                 {/* Overlay for hamburgermeny */}
                 <div
-                    className={`fixed bg-black bg-opacity-80 transition-opacity duration-300 ${isOpen ? 'opacity-100 visible' : 'opacity-0 invisible'
+                    className={`fixed bg-black h-[110vh] w-[100vw] bg-opacity-80 -ms-3 -mt-[70vh] transition-opacity duration-300 ${isOpen ? 'opacity-100 visible' : 'opacity-0 invisible'
                         } flex justify-center items-center`}
                     onClick={toggleMenu}
                 >
