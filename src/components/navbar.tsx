@@ -27,10 +27,10 @@ const Navbar: React.FC = () => {
 
     return (
         <header
-            className={`fixed top-0 left-0 w-full z-50 pb-3 px-3 sm:px-0 sm:pb-0 transition-colors  duration-300 bg-orange-700 bg-opacity-80 sm:rounded-b-xl font}`}
+            className={`fixed top-0 left-0 w-full z-50 pb-3 px-3 xl:px-0 md:pb-0 transition-colors  duration-300 bg-orange-700 bg-opacity-80 md:rounded-b-xl font}`}
         >
             {/* Desktop-menynavigasjon */}
-            <div className='hidden sm:flex justify-center drop-shadow-md sm:w-full md:w-3/4 mx-auto justify-between text-pinkLight font-bold text-xl py-4 '>
+            <div className='hidden md:flex  drop-shadow-md sm:w-full lg:w-3/4 mx-auto justify-between text-pinkLight font-bold text-xl py-4 '>
                 <div className='flex justify-between w-full'>
                     {navLinks.slice(0, 2).map((link) => (
                         <a
@@ -62,7 +62,7 @@ const Navbar: React.FC = () => {
             </div>
 
             {/* Mobile-menynavigasjon (hamburgermeny) */}
-            <div className="sm:hidden flex justify-between pt-4">
+            <div className="md:hidden flex justify-between pt-4">
                 {/* Burger-ikon */}
                 <div className="cursor-pointer" onClick={toggleMenu}>
                     <div className="w-6 h-1 bg-black mb-1"></div>

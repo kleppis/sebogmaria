@@ -1,6 +1,7 @@
 import React from "react"
 import Navbar from "../components/navbar"
 import Footer from "../components/footer"
+import "./History.css";
 import Timeline from '@mui/lab/Timeline';
 import TimelineItem from '@mui/lab/TimelineItem';
 import TimelineSeparator from '@mui/lab/TimelineSeparator';
@@ -10,19 +11,36 @@ import TimelineDot from '@mui/lab/TimelineDot';
 import TimelineOppositeContent, {
     timelineOppositeContentClasses,
 } from '@mui/lab/TimelineOppositeContent';
+import { useInView } from 'react-intersection-observer';
+import TimelineView from "../components/Timeline";
+
+
 
 
 const History = () => {
+
+
     return (
         <>
             <Navbar />
-            <body className="md:px-40 innslag-screen bg-primary">
-                <Navbar />
-                <h1 className="text-center text-5xl pt-28 text-pinkDark">Vår historie</h1>
-                <div className="flex">
-                    <img src="" alt="" className="hidden md:block h-64 shadow-lg shadow-grey-500 sticky top-20" />
+            <body className="hisBody md:px-40 py-32 bg-primary">
+                <h1 className="text-pinkDark text-center text-5xl sm:text-8xl pb-10">Vår historie</h1>
 
-                    <Timeline
+                <TimelineView />
+            </body>
+            <div className="no-snap">
+                <Footer />
+            </div>
+        </>
+
+    )
+}
+
+export default History;
+
+
+/*
+ <Timeline
                         sx={{
                             [`& .${timelineOppositeContentClasses.root}`]: {
                                 flex: 0.2,
@@ -59,12 +77,4 @@ const History = () => {
                             <TimelineContent>Code</TimelineContent>
                         </TimelineItem>
                     </Timeline>
-                </div>
-            </body>
-            <Footer />
-        </>
-
-    )
-}
-
-export default History;
+*/

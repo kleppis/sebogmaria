@@ -57,8 +57,8 @@ const Home: React.FC = () => {
             <img src={Bilde4} alt="" className="hidden xl:block shadow-lg  shadow-gray-600 h-1/6" />
             <div className="w-full xl:w-auto">
               <h2 className="text-4xl text-center xl:text-start ">Vi gleder oss til å feire med dere</h2>
-              <h3 className="mt-10 hidden md:block text-center xl:text-start text-3xl">Vielse: &emsp; Fon kirke &emsp; 12.00</h3>
-              <h3 className="mt-10 text-center xl:text-start md:hidden text-3xl">Vielse: &nbsp; Fon kirke &nbsp; 12.00</h3>
+              <h3 className="mt-10 hidden md:block text-center xl:text-start text-3xl">Vielse: &emsp; Fon kirke &emsp; 13.30</h3>
+              <h3 className="mt-10 text-center xl:text-start md:hidden text-3xl">Vielse: &nbsp; Fon kirke &nbsp; 13.30</h3>
               <div className="mx-auto w-fit xl:mx-0">
                 <iframe
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2030.2537464981176!2d10.203136097175884!3d59.412162101325116!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4646cd4712110365%3A0xb4c3b902b6386a14!2sFon%20kirke!5e0!3m2!1sno!2sno!4v1732392043869!5m2!1sno!2sno"
