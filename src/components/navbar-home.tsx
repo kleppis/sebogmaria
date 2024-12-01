@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import '../index.css';
 import './navbar.css';
 
-
 const Navbar_home: React.FC = () => {
     const [isOpen, setIsOpen] = useState(false);
     const [hasScrolled, setHasScrolled] = useState(false);
@@ -11,13 +10,10 @@ const Navbar_home: React.FC = () => {
         setIsOpen(!isOpen);
     };
 
-    // Finner den aktive siden
     const currentPath = window.location.pathname;
 
-    // Funksjon for å sjekke om en lenke er aktiv
     const isActive = (path: string) => currentPath === path;
 
-    // Navigasjonslenker (uten "Hjem")
     const navLinks = [
         { href: "/Galleri", label: "Galleri" },
         { href: "/history", label: "Vår historie" },
@@ -25,14 +21,9 @@ const Navbar_home: React.FC = () => {
         { href: "/Innslag", label: "Innslag" },
     ];
 
-    // Legg til en scroll event listener for å sjekke om brukeren har scrollet
     useEffect(() => {
         const handleScroll = () => {
-            if (window.scrollY > 600) {
-                setHasScrolled(true);
-            } else {
-                setHasScrolled(false);
-            }
+            setHasScrolled(window.scrollY > 600);
         };
 
         window.addEventListener('scroll', handleScroll);
@@ -40,57 +31,11 @@ const Navbar_home: React.FC = () => {
     }, []);
 
     return (
-        <header
-            className={`sticky top-0 left-0 w-full z-50 links pb-3 px-3 md:px-0 md:pb-0 transition-colors duration-300 ${hasScrolled ? 'bg-orange-700 bg-opacity-80 sm:rounded-b-xl font' : 'bg-transparent'
-                }`}
-        >
-            {/* Desktop-menynavigasjon */}
-            <div className='hidden md:flex sm:w-full md:w-3/4 mx-auto justify-between text-pinkLight font-bold text-xl py-4 '>
-                <div className='flex justify-between w-full'>
-                    {navLinks.slice(0, 2).map((link) => (
-                        <a
-                            key={link.href}
-                            href={link.href}
-                            className={`links-home ${isActive(link.href) ? 'text-pinkLight' : ''}`}
-                        >
-                            {link.label}
-                        </a>
-                    ))}
-                </div>
-                <a
-                    href="/"
-                    className={`w-full text-center link-active links-home hover:drop-shadow-lg text-2xl ${isActive('/') ? 'text-pinkLight' : ''}`}
-                >
-                    Hjem
-                </a>
-                <div className='flex justify-between w-full '>
-                    {navLinks.slice(2).map((link) => (
-                        <a
-                            key={link.href}
-                            href={link.href}
-                            className={`links-home ${isActive(link.href) ? 'text-pinkLight' : ''}`}
-                        >
-                            {link.label}
-                        </a>
-                    ))}
-                </div>
-            </div>
-
-            {/* Mobile-menynavigasjon (hamburgermeny) */}
-            <div className="md:hidden flex justify-between pt-4">
-                {/* Burger-ikon */}
-                <div className="cursor-pointer" onClick={toggleMenu}>
-                    <div className="w-6 h-1 bg-black mb-1"></div>
-                    <div className="w-6 h-1 bg-black mb-1"></div>
-                    <div className="w-6 h-1 bg-black"></div>
-                </div>
-                <div>
-                    <p>Maria & Sebastian</p>
-                </div>
-                {/* Overlay for hamburgermeny */}
+        <>
+            {/* Overlay for hamburgermeny */}
+            {isOpen && (
                 <div
-                    className={`fixed bg-black h-[110vh] w-[100vw] bg-opacity-80 -ms-3 -mt-[70vh] transition-opacity duration-300 ${isOpen ? 'opacity-100 visible' : 'opacity-0 invisible'
-                        } flex justify-center items-center`}
+                    className="fixed top-0 left-0 bg-black h-[100vh] w-[100vw] bg-opacity-80 z-50 flex justify-center items-center"
                     onClick={toggleMenu}
                 >
                     <div className="text-white text-3xl font-bold">
@@ -113,8 +58,62 @@ const Navbar_home: React.FC = () => {
                         </ul>
                     </div>
                 </div>
-            </div>
-        </header>
+            )}
+
+            {/* Header */}
+            <header
+                className={`sticky top-0 left-0 w-full z-40 links pb-3 px-3 md:px-0 md:pb-0 transition-colors duration-300 ${hasScrolled
+                    ? 'bg-orange-700 bg-opacity-80 sm:rounded-b-xl font'
+                    : 'bg-transparent'
+                    }`}
+            >
+                {/* Desktop-menynavigasjon */}
+                <div className="hidden md:flex sm:w-full md:w-3/4 mx-auto justify-between text-pinkLight font-bold text-xl py-4 ">
+                    <div className="flex justify-between w-full">
+                        {navLinks.slice(0, 2).map((link) => (
+                            <a
+                                key={link.href}
+                                href={link.href}
+                                className={`links-home ${isActive(link.href) ? 'text-pinkLight' : ''}`}
+                            >
+                                {link.label}
+                            </a>
+                        ))}
+                    </div>
+                    <a
+                        href="/"
+                        className={`w-full text-center link-active links-home hover:drop-shadow-lg text-2xl ${isActive('/') ? 'text-pinkLight' : ''
+                            }`}
+                    >
+                        Hjem
+                    </a>
+                    <div className="flex justify-between w-full ">
+                        {navLinks.slice(2).map((link) => (
+                            <a
+                                key={link.href}
+                                href={link.href}
+                                className={`links-home ${isActive(link.href) ? 'text-pinkLight' : ''}`}
+                            >
+                                {link.label}
+                            </a>
+                        ))}
+                    </div>
+                </div>
+
+                {/* Mobile-menynavigasjon (hamburgermeny) */}
+                <div className="md:hidden flex justify-between pt-4">
+                    {/* Burger-ikon */}
+                    <div className="cursor-pointer" onClick={toggleMenu}>
+                        <div className="w-6 h-1 bg-black mb-1"></div>
+                        <div className="w-6 h-1 bg-black mb-1"></div>
+                        <div className="w-6 h-1 bg-black"></div>
+                    </div>
+                    <div>
+                        <p>Maria & Sebastian</p>
+                    </div>
+                </div>
+            </header>
+        </>
     );
 };
 

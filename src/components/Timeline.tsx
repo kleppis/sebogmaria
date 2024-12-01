@@ -25,7 +25,7 @@ const TimelineView = () => {
             id: 4,
             content: '6. desember 2022',
             image: 'https://via.placeholder.com/100',
-            text: 'andre date på Paradox museum',
+            text: 'Andre date på Paradox museum',
         },
         {
             id: 5,
@@ -82,7 +82,7 @@ const TimelineStep = ({
             className={`snap-item snap-center transition-opacity duration-700 ease-in-out transform ${inView ? 'opacity-100 scale-100' : 'opacity-0 scale-90'
                 } flex flex-col items-center justify-center h-[55vh]`}
         >
-            <div className="bg-goldLight p-6  rounded-lg shadow-lg w-2/3 text-center">
+            <div className="bg-goldLight p-6  rounded-lg shadow-lg w-2/3 text-center text-white">
                 <h3 className="text-2xl md:text-4xl font-bold pb-4">{content}</h3>
                 <p dangerouslySetInnerHTML={{ __html: text }} />
             </div>
