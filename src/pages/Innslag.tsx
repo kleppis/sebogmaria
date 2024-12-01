@@ -19,7 +19,7 @@ const Innslag = () => {
                     <div className="md:w-1/2 mt-10 md:mt-0">
                         <h1 className="text-black text-3xl mb-4 text-center md:text-start">Jørgen Saaghus</h1>
                         <p className="text-center md:text-start">
-                            <a href="tel:+4797194726" className="text-xl text-pinkDark hover:text-pinkLight transition-all">+47 93441227</a>
+                            <a href="tel:+4797194726" className="text-xl text-pinkDark hover:text-pinkLight transition-all">+47 971 94 726</a>
                         </p>
                         <p className="mt-5 text-lg text-justify md:text-wrap">Jørgen bor i kollektiv med Sebastian og er den vi ler mest med og av. Han er opptatt av politikk,
                             nyheter og han elsker oppmerksomhet. Jørgen drikker gjerne en burn kl 24.00 rett før han skal legge seg for å ta opp
@@ -34,7 +34,7 @@ const Innslag = () => {
                     <div className="md:w-1/2 mt-10 md:mt-0">
                         <h1 className="text-black text-3xl mb-4 text-center md:text-start">Kaja Kleppan Flaat</h1>
                         <p className="text-center md:text-start">
-                            <a href="tel:+4796014814" className="text-xl text-pinkDark hover:text-pinkLight transition-all">+47 93441227</a>
+                            <a href="tel:+4796014814" className="text-xl text-pinkDark hover:text-pinkLight transition-all">+47 960 14 814</a>
                         </p>
                         <p className="mt-5 text-lg text-justify md:text-wrap">Lorem ipsum, dolor sit amet sa. Incidunt est a provident fugiat perferendis ipsam iste
                             officiis porro expedita voluptatem nesciunt hic vel quas ipsa ducimus harum magnam laboriosam, magni quis deserunt
