@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
 import "./Home.css";
 import "./index.css";
-import Bilde1 from "./assets/bilde2.jpg";
-import Bilde2 from "./assets/bilde3.jpg";
-import Bilde4 from "./assets/bilde4.jpg";
+import Bilde1 from "./gallery/Maria & Seb-116.jpg";
+import Bilde2 from "./gallery/Maria & Seb-229.jpg";
+import Bilde4 from "./gallery/Maria & Seb-216.jpg";
 import Footer from "./components/footer";
 import Navbar_home from "./components/navbar-home";
 import MouseHover from "./components/mouseHover";
@@ -32,9 +32,9 @@ const Home: React.FC = () => {
           <h1 className="hidden md:block text-9xl text-center text-pinkLight header-h1">Velkommen</h1>
           <div className=" md:hidden bg-goldLight mx-10 sm:mx-20 p-5 rounded-md mt-5 shadow-lg shadow-gray-400">
             <h1 className="text-primary text-3xl">Velkommen</h1>
-            <p className="text-primary text-xl mt-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel qui deserunt perferendis
-              cumque maxime excepturi vitae, ducimus repellendus quaerat magni ab quibusdam odio similique
-              dignissimos sint debitis accusamus pariatur omnis.</p>
+            <p className="text-primary text-xl mt-5">Hei og velkommen til vår nettside. Her finner du litt informasjon om den store dagen,
+              samt litt annet snacks blant annet noe av vår historie, ønskelister og hvem du skal kontakte for innslag og andre henvendelser.
+            </p>
           </div>
           <div className=" md:flex px-10 sm:px-20 md:px-20  py-14">
             <div className=" md:me-12 mb-14 md:mb-0 relative group cursor-pointer">
@@ -46,15 +46,15 @@ const Home: React.FC = () => {
           </div>
           <div className=" hidden bg-goldLight mx-10 sm:mx-20 p-5 rounded-md mt-5 shadow-lg shadow-gray-400">
             <h1 className="text-primary">Velkommen</h1>
-            <p className="text-primary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel qui deserunt perferendis
-              cumque maxime excepturi vitae, ducimus repellendus quaerat magni ab quibusdam odio similique
-              dignissimos sint debitis accusamus pariatur omnis.</p>
+            <p className="text-primary">Hei og velkommen til vår nettside. Her finner du litt informasjon om den store dagen,
+              samt litt annet snacks blant annet noe snacav vår historie, ønskelister og hvem du skal kontakte for innslag og andre henvendelser.
+            </p>
           </div>
 
 
 
           <div className=" sm:flex px-10 sm:px-20 pb-10 md:py-40 xl:space-x-10">
-            <img src={Bilde4} alt="" className="hidden xl:block shadow-lg  shadow-gray-600 h-1/6" />
+            <img src={Bilde4} alt="" className="hidden xl:block shadow-lg w-1/2  shadow-gray-600 h-1/6" />
             <div className="w-full xl:w-auto">
               <h2 className="text-4xl text-center xl:text-start ">Vi gleder oss til å feire med dere</h2>
               <h3 className="mt-10 hidden md:block text-center xl:text-start text-3xl">Vielse: &emsp; Fon kirke &emsp; 13.30</h3>

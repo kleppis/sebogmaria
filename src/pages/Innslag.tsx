@@ -36,10 +36,7 @@ const Innslag = () => {
                         <p className="text-center md:text-start">
                             <a href="tel:+4796014814" className="text-xl text-pinkDark hover:text-pinkLight transition-all">+47 960 14 814</a>
                         </p>
-                        <p className="mt-5 text-lg text-justify md:text-wrap">Lorem ipsum, dolor sit amet sa. Incidunt est a provident fugiat perferendis ipsam iste
-                            officiis porro expedita voluptatem nesciunt hic vel quas ipsa ducimus harum magnam laboriosam, magni quis deserunt
-                            quia quisquam cupiditate? Vero, adipisci. Non tempora optio eum sed distinctio qui. Amet magni nobis esse porro veritatis
-                            in ab ex, provident dolores neque sequi?
+                        <p className="mt-5 text-lg text-justify md:text-wrap">Kaja er vennine av Sebastian. Hun er for tiden stuck på Sørlandet og er godt gift med Lars Kristian. Kaja er et fyrverkeri av et menneske, det er aldri kjedelig rundt henne. Kaja viser omsorg med å lekesloss og si noen beinharde ord. Hun er en god venn å ha i livet som vi er takknemlige for at vi får lov til å kjenne. Vi håper på at Kaja kan holde Jørgen i tøylende.
                         </p>
                     </div>
                 </div>

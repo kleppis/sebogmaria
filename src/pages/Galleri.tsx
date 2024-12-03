@@ -11,8 +11,6 @@ import Bilde5 from "../gallery/Maria & Seb-154.jpg";
 import Bilde6 from "../gallery/Maria & Seb-172.jpg";
 import Bilde7 from "../gallery/Maria & Seb-185.jpg";
 import Bilde8 from "../gallery/Maria & Seb-189.jpg";
-import Bilde9 from "../gallery/Maria & Seb-192.jpg";
-import Bilde10 from "../gallery/Maria & Seb-193.jpg";
 import Bilde11 from "../gallery/Maria & Seb-203.jpg";
 import Bilde13 from "../gallery/Maria & Seb-206.jpg";
 import Bilde14 from "../gallery/Maria & Seb-216.jpg";
@@ -47,8 +45,6 @@ const Galleri = () => {
                             { src: Bilde6, type: "landscape" },
                             { src: Bilde7, type: "landscape" },
                             { src: Bilde8, type: "landscape" },
-                            { src: Bilde9, type: "landscape" },
-                            { src: Bilde10, type: "landscape" },
                             { src: Bilde11, type: "landscape" },
                             { src: Bilde13, type: "landscape" },
                             { src: Bilde14, type: "portrait" },
