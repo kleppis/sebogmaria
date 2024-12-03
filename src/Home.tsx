@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
 import "./Home.css";
 import "./index.css";
-import Bilde1 from "./assets/bilde2.jpg";
-import Bilde2 from "./assets/bilde3.jpg";
-import Bilde4 from "./assets/bilde4.jpg";
+import Bilde1 from "./gallery/Maria & Seb-116.jpg";
+import Bilde2 from "./gallery/Maria & Seb-229.jpg";
+import Bilde4 from "./gallery/Maria & Seb-216.jpg";
 import Footer from "./components/footer";
 import Navbar_home from "./components/navbar-home";
 import MouseHover from "./components/mouseHover";
@@ -54,7 +54,7 @@ const Home: React.FC = () => {
 
 
           <div className=" sm:flex px-10 sm:px-20 pb-10 md:py-40 xl:space-x-10">
-            <img src={Bilde4} alt="" className="hidden xl:block shadow-lg  shadow-gray-600 h-1/6" />
+            <img src={Bilde4} alt="" className="hidden xl:block shadow-lg w-1/2  shadow-gray-600 h-1/6" />
             <div className="w-full xl:w-auto">
               <h2 className="text-4xl text-center xl:text-start ">Vi gleder oss til å feire med dere</h2>
               <h3 className="mt-10 hidden md:block text-center xl:text-start text-3xl">Vielse: &emsp; Fon kirke &emsp; 13.30</h3>

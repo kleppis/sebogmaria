@@ -1,6 +1,7 @@
 import React from "react";
 import "./footer.css"
 import Countdown from "./Countdown";
+import Logo from "../assets/logo.svg";
 
 
 /*
@@ -62,6 +63,9 @@ const Footer = () => {
             <div className="w-full">
                 <Countdown />
                 <p className=" text-5xl">TIL PARTY</p>
+                <a href="http://kleppanit.no/">
+                    <img src={Logo} alt="" className="w-[100px] mt-5 mx-auto hover:opacity-70 transition-all" />
+                </a>
             </div>
             <div className="w-full text-xl mt-5 md:mt-16 sm:text-end">
                 <a href="/KommerDu" className=" hover:text-pinkLight transition-all">Kommer du ikke?</a>
