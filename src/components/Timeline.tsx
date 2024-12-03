@@ -5,6 +5,7 @@ import Second from "../assets/second_date.jpg";
 import Sammen from "../assets/vi ble sammen.png";
 import Exclusive from "../assets/exclusive.jpg";
 import Marry from "../assets/marry_.jpg";
+import BF from "../assets/bf_.jpg";
 
 
 
@@ -18,6 +19,7 @@ const TimelineView = () => {
         {
             id: 2,
             content: '27.november 2022',
+            image: BF,
             text: '<b>Sebastian:</b> Har du Kjæreste? <br> <b>Maria:</b> Nei? <br> <b>Sebastian:</b> Erru gira på en date? <br> <b>Maria:</b> Eeeeeeeeh ja?'
         },
         {
@@ -84,12 +86,12 @@ const TimelineStep = ({
         <div
             ref={ref}
             className={`snap-item snap-center transition-opacity duration-700 ease-in-out transform ${inView ? 'opacity-100 scale-100' : 'opacity-0 scale-90'
-                } flex flex-col items-center justify-center h-[55vh]`}
+                } flex flex-col items-center justify-center `}
         >
-            <div className="bg-goldLight p-6 rounded-lg shadow-lg w-2/3 text-center text-white">
+            <div className="bg-goldLight p-6 rounded-lg shadow-lg w-2/3 text-center mt-36 text-white">
                 <h3 className="text-2xl md:text-4xl font-bold pb-4">{content}</h3>
                 <p dangerouslySetInnerHTML={{ __html: text }} />
-                {image && <img src={image} alt="Timeline" className='h-64 mx-auto mt-4 rounded' />}
+                {image && <img src={image} alt="Timeline" className='h-56 sm:h-64 object-cover mx-auto mt-4 rounded' />}
             </div>
         </div>
     );
