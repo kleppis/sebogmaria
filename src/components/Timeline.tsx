@@ -11,13 +11,13 @@ const TimelineView = () => {
         },
         {
             id: 2,
-            content: '29.november 2022',
+            content: '27.november 2022',
             image: 'https://via.placeholder.com/100',
             text: '<b>Sebastian:</b> Har du Kjæreste? <br> <b>Maria:</b> Nei? <br> <b>Sebastian:</b> Erru gira på en date? <br> <b>Maria:</b> Eeeeeeeeh ja?'
         },
         {
             id: 3,
-            content: '1.desember 2022',
+            content: '30.november 2022',
             image: 'https://via.placeholder.com/100',
             text: 'Første date på Oslo Camping minigolf',
         },

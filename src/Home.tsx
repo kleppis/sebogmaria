@@ -32,9 +32,9 @@ const Home: React.FC = () => {
           <h1 className="hidden md:block text-9xl text-center text-pinkLight header-h1">Velkommen</h1>
           <div className=" md:hidden bg-goldLight mx-10 sm:mx-20 p-5 rounded-md mt-5 shadow-lg shadow-gray-400">
             <h1 className="text-primary text-3xl">Velkommen</h1>
-            <p className="text-primary text-xl mt-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel qui deserunt perferendis
-              cumque maxime excepturi vitae, ducimus repellendus quaerat magni ab quibusdam odio similique
-              dignissimos sint debitis accusamus pariatur omnis.</p>
+            <p className="text-primary text-xl mt-5">Hei og velkommen til vår nettside. Her finner du litt informasjon om den store dagen,
+              samt litt annet snacks blant annet noe av vår historie, ønskelister og hvem du skal kontakte for innslag og andre henvendelser.
+            </p>
           </div>
           <div className=" md:flex px-10 sm:px-20 md:px-20  py-14">
             <div className=" md:me-12 mb-14 md:mb-0 relative group cursor-pointer">
@@ -46,9 +46,9 @@ const Home: React.FC = () => {
           </div>
           <div className=" hidden bg-goldLight mx-10 sm:mx-20 p-5 rounded-md mt-5 shadow-lg shadow-gray-400">
             <h1 className="text-primary">Velkommen</h1>
-            <p className="text-primary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel qui deserunt perferendis
-              cumque maxime excepturi vitae, ducimus repellendus quaerat magni ab quibusdam odio similique
-              dignissimos sint debitis accusamus pariatur omnis.</p>
+            <p className="text-primary">Hei og velkommen til vår nettside. Her finner du litt informasjon om den store dagen,
+              samt litt annet snacks blant annet noe snacav vår historie, ønskelister og hvem du skal kontakte for innslag og andre henvendelser.
+            </p>
           </div>
 
 
