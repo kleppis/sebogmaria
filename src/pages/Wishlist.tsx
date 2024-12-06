@@ -18,7 +18,7 @@ const Galleri = () => {
         <>
             <Navbar />
             <body className="bg-primary">
-                <div className="background bg-no-repeat bg-cover bg-center py-32 px-4 sm:px-20 h-screen">
+                <div className="background bg-no-repeat bg-cover bg-center py-32 px-4 sm:px-20 min-h-screen">
                     <h1 className="text-pinkDark text-center text-5xl sm:text-8xl pb-10">Ønskeliste</h1>
 
                     <div className=" lg:flex justify-center lg:space-x-10 lg:py-44 text-center">
