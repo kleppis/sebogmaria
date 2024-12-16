@@ -12,6 +12,7 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
+import InvitasjonPage from "./pages/Invitasjon";
 
 // Opprett routeren
 const router = createBrowserRouter([
@@ -38,6 +39,10 @@ const router = createBrowserRouter([
   {
     path: "history",
     element: <History />
+  },
+  {
+    path: "invitasjon/:navn",
+    element: <InvitasjonPage />
   }
 ]);
 
