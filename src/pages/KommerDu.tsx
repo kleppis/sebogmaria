@@ -39,7 +39,7 @@ const KommerDu = () => {
                         ref={iframeRef}
                         src="https://docs.google.com/forms/d/e/1FAIpQLSfxdReGHt71C3wRwXNIoyz1qZgT54IAYdh9UI9wZr9Lg8yo5Q/viewform?embedded=true"
                         width="640"
-                        style={{ height: '1200px', border: 'none' }}
+                        style={{ minHeight: '1300px', border: 'none' }}
                         frameBorder="0"
                         marginHeight={0}
                         marginWidth={0}
