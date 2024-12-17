@@ -8,7 +8,7 @@ const InvitasjonPage: React.FC = () => {
     return (
         <div className=" bg-primary mx-auto">
             <div className=" justify-center max-w-5xl px-5 sm:px-20 mx-auto">
-                <img src="/S&M3.svg" alt="" className='w-52 mx-auto py-12' />
+                <img src="/S&M3.svg" alt="" className='w-28 md:w-52 mx-auto py-12' />
                 <h1 className=" font-normal text-5xl md:text-9xl text-pinkDark">
                     du er herved
                 </h1>
@@ -29,8 +29,8 @@ const InvitasjonPage: React.FC = () => {
                 </p>
                 <img src="/maria-og-sebasatian.svg" alt="" className='w-full mx-auto py-12' />
                 <div className=' flex flex-col sm:flex-row justify-center pb-20 sm:space-x-8 md:pb-40'>
-                    <a href="/" className='uppercase py-7 mx-auto mb-10 sm:mb-0 bg-pinkDark text-3xl md:text-[5vw] lg:text-6xl rounded-xl text-white hover:bg-pinkLight transition-all drop-shadow-2xl w-1/2 text-center'>mer info</a>
-                    <a href="/kommerdu" className='uppercase py-7 mx-auto bg-pinkDark text-3xl md:text-[5vw] lg:text-6xl rounded-xl text-white hover:bg-pinkLight transition-all drop-shadow-2xl w-1/2 text-center'>Kommer du?</a>
+                    <a href="/" className='uppercase py-7 mx-auto mb-10 sm:mb-0 bg-pinkDark text-3xl md:text-[5vw] lg:text-6xl rounded-xl text-white hover:bg-pinkLight transition-all drop-shadow-2xl w-full md:w-1/2 text-center'>mer info</a>
+                    <a href="/kommerdu" className='uppercase py-7 mx-auto bg-pinkDark text-3xl md:text-[5vw] lg:text-6xl rounded-xl text-white hover:bg-pinkLight transition-all drop-shadow-2xl w-full md:w-1/2 text-center'>Kommer du?</a>
                 </div>
             </div>
         </div >
