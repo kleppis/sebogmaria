@@ -1,3 +1,5 @@
+Dette er mitt nyeste prosjekt. Dette er en bryllups-side for en venn av meg. Han stilte med mye design og preferanser. Og jeg gjorde alt av koding og ulike frontend og hosting-løsninger.
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
